@@ -13,9 +13,18 @@ body {
     letter-spacing: 0.03em;
 }
 
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid tomato;
+}
+
 /* ВЕРХНЯЯ ЛИНИЯ */
 
 /* Логотип */
+
 .logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -32,8 +41,25 @@ body {
 }
 
 /* Навигация */
-ul {
+
+.list {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+} */
+
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .site-nav .nav-link {
@@ -42,6 +68,7 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    outline: 2px solid tomato;
 }
 
 .site-nav .nav-link.current {
@@ -85,6 +112,10 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+    /* margin-block-start: 0;
+    margin-block-end: 0;??? */
 }
 
 .primery-buttton {
@@ -99,15 +130,24 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: 0px;
 }
 
 /* СЕКЦИЯ ОСОБЕННОСТИ */
-.spetialty-list h3{
+h2, h3, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.spetialty-list h3 {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .spetialty-list p {
@@ -116,6 +156,11 @@ ul {
 }
 
 /* СЕКЦИЯ "Чем ми занимаемся" и СЕКЦИЯ "Наша команда" */
+
+.section-affeirs,
+.section-team {
+    padding-bottom: 94px;
+}
 
 .section-team {
     background-color: rgba(245, 244, 250, 1);
@@ -127,6 +172,7 @@ ul {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .team-list h3 {
@@ -135,6 +181,8 @@ ul {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-list p {
@@ -150,6 +198,11 @@ ul {
 /* СЕКЦИЯ ПОРТФОЛИО */
 
 /* filters */
+
+.portfolio-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 .button {
     color: var(--title-text-color);
@@ -213,30 +266,3 @@ ul {
     letter-spacing: 0.03em;
 }
 
-/* header: цвет в лого rgba(33, 150, 243, 1) rgba(0, 0, 0, 1);
-цвет текста в навигации rgba(33, 33, 33, 1);
-цвет текста в навигации при наведении rgba(33, 150, 243, 1)
-цвет e-mail при наведении rgba(33, 150, 243, 1) без наведения rgba(117, 117, 117, 1)
-цвет тел. rgba(117, 117, 117, 1)
-
-Шапка: background-color: rgba(47, 48, 58, 1)
-заголовок rgba(255, 255, 255, 1)
-кнопка: шрифт rgba(255, 255, 255, 1), фон #2196F3
-
-Особенности: заголовок h3 color: #212121;
-текст: rgba(117, 117, 117, 1);; 
-
-Чем мы занимаемся: Заголовок h2 rgba(33, 33, 33, 1) 
-Наша команда: Заголовок h2 rgba(33, 33, 33, 1)
-h3 rgba(33, 33, 33, 1)
-текст rgba(117, 117, 117, 1)
-
-Футер: цвет в лого rgba(33, 150, 243, 1) rgba(0, 0, 0, 1);
-адрес rgba(255, 255, 255, 1)
-e-mail rgba(255, 255, 255, 0.6)
-тел. rgba(255, 255, 255, 0.6)
-
-Основной цвет rgba(33, 33, 33, 1)
-вторичный цвет rgba(117, 117, 117, 1)
-акцент rgba(33, 150, 243, 1)
-*/
