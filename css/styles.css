@@ -58,7 +58,7 @@ img {
     display: flex;
 }
 
-.top-line {
+.page-header {
     border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
@@ -147,7 +147,10 @@ img {
 /* СЕКЦИЯ ШАПКА */
 .cap {
     background: var(--dark-blue-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
+
 .cap-tiitle {
     color: var(--white-color);
     font-weight: 900;
@@ -182,12 +185,19 @@ img {
     margin-right: auto;
 }
 
-
+.primery-buttton:hover,
+.primery-buttton:focus {
+    background-color: rgba(24, 140, 232, 1);
+}
 
 /* СЕКЦИЯ ОСОБЕННОСТИ */
 
 .specialty-list {
     display: flex;
+}
+
+.specialty h2 {
+    display: none;
 }
 
 .specialty-list h3 {
@@ -225,8 +235,7 @@ img {
     margin-right: 30px;
 }
 
-.section.affeirs,
-.section.team {
+.section.affeirs {
     padding-top: 0px;
 }
 
@@ -265,8 +274,8 @@ img {
 }
 
 .team-list .item-text {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-list p {
@@ -286,6 +295,10 @@ img {
 .portfolio-list {
     display: flex;
     justify-content: center;
+}
+
+.portfolio h1 {
+    display: none;
 }
 
 .portfolio-list {
@@ -335,10 +348,8 @@ img {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
-    border-bottom: 1px solid rgba(238, 238, 238, 1);
+    border: 1px solid rgba(238, 238, 238, 1);
 }
-
-
 
 .projects-list .projects-item:nth-child(n+7) {
     margin-bottom: 0;
@@ -361,7 +372,7 @@ img {
 }
 
 .card-text {
-    margin: 20px 24px;
+    padding: 20px 24px;
 }
 
 .projects-cards h2 {
